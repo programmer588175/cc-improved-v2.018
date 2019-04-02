@@ -158,6 +158,8 @@ var numberFormatters =
 ];
 function Beautify(value,floats)
 {
+	if (value<1e+21)
+	{
 	var negative=(value<0);
 	var decimal='';
 	var fixed=value.toFixed(floats);
@@ -168,6 +170,9 @@ function Beautify(value,floats)
 	var output=formatter(value).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
 	if (output=='0') negative=false;
 	return negative?'-'+output:output+decimal;
+	} else {
+		return value.toPrecision(17)
+	}
 }
 function shortenNumber(value)
 {
