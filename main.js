@@ -162,7 +162,7 @@ function Beautify(value,floats)
 	{
 	var negative=(value<0);
 	var decimal='';
-	var fixed=value.toFixed(floats);
+	var fixed=value.toFixed(2);
 	if (Math.abs(value)<1000 && floats>0 && Math.floor(fixed)!=fixed) decimal='.'+(fixed.toString()).split('.')[1];
 	value=Math.floor(Math.abs(value));
 	if (floats>0 && fixed==value+1) value++;
