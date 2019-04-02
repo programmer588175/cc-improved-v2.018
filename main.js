@@ -167,7 +167,7 @@ function Beautify(value,floats)
 	value=Math.floor(Math.abs(value));
 	if (floats>0 && fixed==value+1) value++;
 	var formatter=numberFormatters[Game.prefs.format?2:1];
-	var output=formatter(value).toString().replace(/\B(?=(\d{3})+(?!\d))/g,',');
+	var output=formatter(value).toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g,',');
 	if (output=='0') negative=false;
 	return negative?'-'+output:output+decimal;
 	} else {
