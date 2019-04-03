@@ -13369,7 +13369,4 @@ window.onload=function()
 		}
 	}
 };
-Game.tempVar=53
-Game.tempVar2="Testing 1 2 3"
-delete Game.tempVar
-delete Game.tempVar2
+var loaded=Game.ready
