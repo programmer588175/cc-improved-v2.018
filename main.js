@@ -5385,9 +5385,9 @@ Game.Launch=function()
 				hours-=days*24;
 				minutes-=hours*60+days*24*60;
 				seconds-=minutes*60+hours*60*60+days*24*60*60;
-				if (days>10) {hours=0;}
-				if (days) {minutes=0;seconds=0;}
-				if (hours) {seconds=0;}
+				if (days>10) {hours=hours;}
+				if (days) {minutes=hours;seconds=hours;}
+				if (hours) {seconds=hours;}
 				var bits=[];
 				//if (months>0) bits.push(Beautify(months)+' month'+(days==1?'':'s'));
 				if (days>0) bits.push(Beautify(days)+' day'+(days==1?'':'s'));
