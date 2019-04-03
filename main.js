@@ -9467,12 +9467,14 @@ Game.Launch=function()
 		Game.NewUpgradeCookie({name:'Panda koala biscuits',desc:'Assorted jungle animals with equally assorted fillings.<br>Comes in chocolate, strawberry, vanilla and green tea.<br>Eat them all before they go extinct!',icon:[31,13],power:						5,price: getCookiePrice(19)});
 		Game.NewUpgradeCookie({name:'Putri salju',desc:'A beloved Indonesian pastry; its name means "snow princess", for the powdered sugar it\'s coated with. Had we added these to Cookie Clicker some years ago, this is where we\'d make a reference to that one Disney movie, but it\'s probably time to let it go.',icon:[31,30],power:						5,price: getCookiePrice(20)});
 		Game.NewUpgradeCookie({name:'Milk cookies',desc:'Best eaten with a tall glass of chocolate.',icon:[31,31],power:						5,price: getCookiePrice(21)});
-		
+	        Game.NewUpgradeCookie({name:'Numbered cookies',desc:'Eating these remind me of Cookie Clicker!',icon:[30,16],power:						5.1,price: getCookiePrice(22)});
+		Game.NewUpgradeCookie({name:'Money cookies',desc:'Is this like $50000000000000000 for free?',icon:[30,11],power:						5.2,price: getCookiePrice(23)});
+			
 		order=9999;
 		Game.NewUpgradeCookie({name:'Cookie crumbs',desc:'There used to be a cookie here. Now there isn\'t.<br>Good heavens, what did you <i>DO?!</i>',icon:[30,13],power:1,require:'Legacy',price:100});
 		Game.NewUpgradeCookie({name:'Chocolate chip cookie',desc:'This is the cookie you\'ve been clicking this whole time. It looks a bit dented and nibbled on, but it\'s otherwise good as new.',icon:[10,0],power:10,require:'Legacy',price:1000000000000});
-		
-		
+	
+			
 		new Game.Upgrade('Cosmic beginner\'s luck','Prior to purchasing the <b>Heavenly chip secret</b> upgrade in a run, random drops are <b>5 times more common</b>.<q>Oh! A penny!<br>Oh! A priceless heirloom!<br>Oh! Another penny!</q>',999999999*15,[8,10]);Game.last.pool='prestige';Game.last.parents=['Shimmering veil'];
 		new Game.Upgrade('Reinforced membrane','The <b>shimmering veil</b> is more resistant, and has a <b>10% chance</b> not to break. It also gives <b>+10%</b> more CpS.<q>A consistency between jellyfish and cling wrap.</q>',999999999*15,[7,10]);Game.last.pool='prestige';Game.last.parents=['Shimmering veil'];
 		
