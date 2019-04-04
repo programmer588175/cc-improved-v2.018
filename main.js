@@ -13369,4 +13369,3 @@ window.onload=function()
 		}
 	}
 };
-var loaded=Game.ready
