@@ -7,7 +7,7 @@ Spoilers ahead.
 http://orteil.dashnet.org
 */
 
-var VERSION=2.018;
+var VERSION=2.019;
 var BETA=0;
 
 
